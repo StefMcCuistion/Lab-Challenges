@@ -1,9 +1,10 @@
 print("Square Calculator")
 length = input("Enter the length of the sides in meters: ")
-length = float(length)
-area = length * length
-perimeter = length * 4
-print(f"The area is {round(area, 4)} m^2")
+length = float(length)  # converts string input to float
+area = length * length  # area of square with side length = {length}
+perimeter = length * 4  # perimeter of square with side length = {length}
+print(f"The area is {round(area, 4)} m^2")  # rounds length to nearest
+# multiple of 4
 print(f"The perimeter is {perimeter} m")
 
 # Predict what the code does using comments.
