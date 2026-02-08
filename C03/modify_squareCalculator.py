@@ -1,8 +1,10 @@
 print("Square Calculator")
-length = input("Enter the length of the sides in meters: ")
+length = input("Enter the length of the rectangle in meters: ")
+width = input("Enter the width of the rectangle in meters: ")
 length = float(length)
-area = length * length
-perimeter = length * 4
+width = float(width)
+area = length * width
+perimeter = (length * 2) + (width * 2)
 print(f"The area is {round(area, 2)} m^2")
 print(f"The perimeter is {round(perimeter, 2)} m")
 
