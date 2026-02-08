@@ -14,3 +14,6 @@ print(f"The perimeter is {perimeter} m")
 # Investigate:
 
 # Why does the code use float() on line 3?
+
+# Answer: if you don't convert the string to a numeric datatype, you can't
+# multiply it by itself.
