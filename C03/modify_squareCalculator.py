@@ -3,8 +3,8 @@ length = input("Enter the length of the sides in meters: ")
 length = float(length)
 area = length * length
 perimeter = length * 4
-print(f"The area is {round(area, 4)} m^2")
-print(f"The perimeter is {perimeter} m")
+print(f"The area is {round(area, 2)} m^2")
+print(f"The perimeter is {round(perimeter, 2)} m")
 
 # Modify the above code to:
 
