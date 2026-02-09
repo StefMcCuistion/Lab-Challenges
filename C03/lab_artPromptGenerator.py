@@ -1,3 +1,5 @@
+import random
+
 # When artists are trying to keep a daily or regular art practice or
 # challenge, it is hard to start from a blank canvas.
 #
@@ -5,47 +7,70 @@
 #
 # Write a art prompt generator for artists.
 # The tool will generate 3 prompts for the user each time it's run.
-#
-# TIP:
-#
-# Your prompt list is going to be rather long. So make sure that you
-# keep your lines under 79 characters while remaining legible with the
-# right indents. A list can be separated into multiple lines as long as
-# it starts with a [ and ends with a ].
-#
-# e.g.
-# greetings = ['hi', 'hello',
-#              'bonjour', 'konnichiwa']
 
+prompt_templates = [
+    f'A {plant} grows in a {adj} {place}, and it sparks {emotion} in the {title}.',
+    f'A once famous {title} hides in an abandoned {place},'
+    f'practicing humble {job} with lingering {emotion}.',
+    f'{job.title()} is forbidden because of the actions of one {title}.'
+]
 
-# Sample list of 30 art prompts you can use.
-# Clouds
-# Moon
-# Sunflower
-# Stars
-# Planets
-# Emptiness
-# Courage
-# Blues
-# Colorful
-# Hope
-# Diversity
-# Contrast
-# Friendship
-# Shapes
-# Rain
-# Butterfly
-# Heart
-# Flower
-# Freedom
-# Spring
-# Cartoon
-# Layers
-# Patience
-# Soul
-# Sparkles
-# Circles
-# Bubble
-# Mountain
-# Obstacle
-# Affirmation
+prompt_plants = [
+    "tree",
+    "sapling",
+    "bush"
+]
+
+prompt_adjectives = [
+    "tiresome", 
+    "foreboding", 
+    "ominous", 
+    "majestic",
+    "wondrous",
+    "fantastic",
+    "gloomy",
+    "sunny",
+    "hot",
+    "icy",
+    "wintry",
+    "industrial",
+    "grand"
+]
+
+prompt_titles = [
+    "King",
+    "Queen",
+    "Judge",
+    "Lord",
+    "Lawyer",
+    "Attorney",
+    "Chancellor",
+    "Adjudicator",
+    "District General",
+    "Lord Commander",
+    "Captain",
+    "Philosopher-King",
+    "knight",
+    "warrior",
+    "maid",
+    "droid"
+]
+
+prompt_jobs = [
+    "woodworking",
+    "gardening",
+    "carpentry",
+    "clerical work",
+    "pencilpushing",
+    "journalism"
+]
+
+def main(): 
+    print(generate_prompt())
+    print(generate_prompt())
+    print(generate_prompt())
+
+def generate_prompt(): 
+    return
+
+main()
