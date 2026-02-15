@@ -32,7 +32,7 @@ pen.begin_fill()
 pen.circle(radius=90)  # Draw red circle outline, 1 px thick, with green fill
 # and 90 pixel radius
 pen.end_fill()
-pen.fillcolor(1, 1, 1)  
+pen.fillcolor(1, 1, 1)
 pen.begin_fill()
 pen.circle(30)  # Red circle outline 1 px thick with white fill, 30 px radius
 pen.end_fill()
@@ -41,7 +41,7 @@ pen.begin_fill()
 pen.circle(10)  # Red circle outline 1 px thick with green fill, 10 px radius
 pen.end_fill()
 pen.up()
-# Will the circles be concentric, or will their circumferences share a point 
+# Will the circles be concentric, or will their circumferences share a point
 # somewhere, such as at the top, from which they're all drawn?
 # I'm guessing concentric, meaning they're drawin from the center
 
